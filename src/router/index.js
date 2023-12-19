@@ -38,7 +38,8 @@ const router = createRouter({
         {
           path: 'edit',
           name: 'event-edit',
-          component: EventEdit
+          component: EventEdit,
+          meta: { requireAuth: true }
         },
       ]
     },
@@ -72,4 +73,6 @@ const router = createRouter({
   ]
 })
 
+
 export default router
+
